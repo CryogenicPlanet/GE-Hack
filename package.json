@@ -1,0 +1,27 @@
+{
+  "name": "ge-hack",
+  "version": "1.0.0",
+  "description": "contextual care protocol",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "http": "0.0.0",
+    "mysql": "^2.13.0",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryogenicPlanet/GE-Hack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CryogenicPlanet/GE-Hack/issues"
+  },
+  "homepage": "https://github.com/CryogenicPlanet/GE-Hack#readme"
+}

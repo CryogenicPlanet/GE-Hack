@@ -2,7 +2,7 @@
 
             function login(){
                 if (password == "hostipal1") {
-                    //   window.location.replace("/questions.php?userId='" + document.getElementById('userId').value + "'");
+                  window.location.replace("/questions.php?userId='" + document.getElementById('userId').value + "'");
                 }
                 else{
                     invalidPassword();
@@ -11,7 +11,7 @@
 
             function newUser(){
                 if (password == 'hostipal1') {
-                   // window.location.replace("/questions.php?userId=0");
+                   window.location.replace("/questions.php?userId=0");
                 }
                 else {
                     invalidPassword();
