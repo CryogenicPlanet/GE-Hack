@@ -60,8 +60,16 @@ if ($result->num_rows > 0) {
           <input name="number" id="number" type="number" class="validate">
           <label for="number">FeedBack</label>
         </div>
+        <div class="switch">
+    <label>
+      minus
+      <input type="checkbox" name="yes">
+      <span class="lever"></span>
+        plus
+    </label>
+  </div>
         <input type="hidden" name="risk" value=<?php echo $risk; ?>>
-        
+        <input type="hidden" name="vid" value=<?php echo $vid; ?>>
   <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
   </button>
