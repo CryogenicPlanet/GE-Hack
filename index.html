@@ -19,7 +19,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script type="text/javascript" src="js/login.js"></script>
+  <!--   <script type="text/javascript" src="js/login.js"></script> -->
     <div class="row">
         <div class="row"></div>
         <div class="row"></div>
@@ -41,20 +41,30 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="password" type="password" class="validate">
+                                    <input id="password" type="password" class="validate" required>
                                     <label for="password">Hospital Authentication</label>
                                 </div>
                             </div>
                     </div>
                     <div class="row">
-                        <button class="waves-effect waves-light btn" onclick="login()">Login</button>
-                        <button class="waves-effect waves-light btn" onclick="newUser()">New User</button>
-                        <button class="waves-effect waves-light btn" onclick="guest()">Guest User</button>
+                        <form id="form-id">
+                        <a class="waves-effect waves-light btn" onclick=f1() id="loginId">Login</button>
+                        <a class="waves-effect waves-light btn" href="/questions.php?userId=0">New User</a>
+                       <!-- <button class="waves-effect waves-light btn" onclick="guest()">Guest User</button> -->
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-       
+       <script type="text/javascript" >
+       var uid = document.getElementById("userId");
+       function f1() {
+           document.getElementById("loginId").onclick= function() {
+               var link = document.getElementById("userId");
+               link.setAttribute("href","/questions.php");
+           }
+       }
+       </script>
 </body>
 
 </html>

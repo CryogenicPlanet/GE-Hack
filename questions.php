@@ -32,12 +32,12 @@ if ($result->num_rows > 0) {
 }
 $uid = $string;
 $vid = 1;
-$sql = "INSERT INTO users (UID,VID) VALUES('" . $uid ."','" . $vid . "')";
+/*$sql = "INSERT INTO users (UID,VID) VALUES('" . $uid ."','" . $vid . "')";
 if ($db->query($sql) === TRUE) {
    // echo "New record created successfully";
 } else {
    // echo "Error: " . $sql . "<br>" . $conn->error;
-}
+} */
  // new user 
         } else {
     $sql ="SELECT VID FROM users WHERE UID='" . $uid ."' ORDER BY VID DESC LIMIT 0, 1";
@@ -45,7 +45,7 @@ if ($db->query($sql) === TRUE) {
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-       $vid = $row["VID"];
+       $vid = $row["VID"] +1;
     }
 }
 } // vid fetteched from database or created for new user
